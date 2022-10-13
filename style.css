@@ -1,0 +1,114 @@
+h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(243, 140, 186);
+    justify-content: space-between;
+    line-height: 1in;
+    padding-left: 20px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div{
+    height: 300px;
+    width: 300px;
+    margin-left: 150px;
+    justify-content: center;
+}
+
+.container form{
+    margin-left: 200px;
+}
+
+.box1{ 
+    
+    background-image: url(../web.html/images/isaac-mitchell-aa8Pi3253Eo-unsplash.jpg);
+    background-size: 500px;
+    border: 2px lightcoral;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 15px;
+    display: inline block;
+    box-sizing: border-box;
+    
+}
+.b2{ 
+    
+    background-image: url(../web.html/images/anna-j5qa7VyYlmc-unsplash.jpg.crdownload);
+    background-size: 300px;
+    border: 2px lightcoral;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 15px;
+    display: inline block;
+    box-sizing: border-box;
+}
+.b3{ 
+    border: 2px lightcoral;
+    background-size: 500px;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 15px;
+    display: inline block;
+    box-sizing: border-box;
+    background-image: url(../web.html/images/jeferson-argueta-g1058zSaGy0-unsplash.jpg.crdownload);
+}
+
+.one{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 12px;
+    color: rgb(243, 140, 186);
+}
+header{
+    width: 100%;
+    height: 50%;
+    background-image: url(../web.html/images/go.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: aliceblue;
+    
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    padding-top: 2in;
+    color: brown;
+    
+}
+.center {
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 75%;
+    width: 50%;
+}
+
+h2{
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+    text-align: center; 
+    font-weight: bold; 
+    color: brown;
+    text-decoration: underline;
+
+}
+
+form{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:large;
+    text-align: center;
+   padding-bottom: 15in;
+}
+
+a {
+    display: inline;
+    padding: 5px;
+    background-color: #ebf13c;
+  }
