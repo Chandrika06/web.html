@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <h4>
         <nav>
             <a href="../web.html/home.html">HOME</a>
@@ -19,17 +21,17 @@
     </h4>
 
     
-        <form action="#to-some-server" method="post">
-            <label for="name">Notes</label>
-            <br>
-            <textarea type="text" id="name" name="name" rows="40" cols= "100" >
-            </textarea>
-            <BR> <br>
+    <form id="note-form">
+        <label for="Add a note"><b style="font-size:40px";>Notes :</b></label>
+        <br>
+        <textarea name="paragraph_text" id="text-area" cols="100" rows="10"></textarea>
+        <br>
+    
+        <button type="submit" value="submit" id= "submit" class="notebtn">submit</button>
         
-            <input type="submit" value="Submit" style="background-color:rgb(255, 187, 0); color: rgb(101, 42, 165);">
-            <br>
         
+      </form>
            
-        
+   <script src="main.js"></script>     
 </body>
 </html>
