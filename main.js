@@ -1,10 +1,11 @@
 
 class User{
-    constructor(fname,lname,name,password){
+    constructor(fname,lname,name,password,notes){
         this.userfName = fname;
         this.userlName = lname;
         this.username = name;
         this.userpassword = password;
+        this.usernotes = notes;
 
         
     }
@@ -20,10 +21,13 @@ class User{
     getUsername(){
         return this.username;
     }
-    setUserName(fname){
+    getUsernotes(){
+        return this.usernotes;
+    }
+    setUserfName(fname){
         this.userfName=fname;
     }
-    setUserName(lname){
+    setUserlName(lname){
         this.userlName=lname;
     }
     setUserPassword(password){
@@ -31,6 +35,9 @@ class User{
     }
     setUsername(name){
         this.username=name;
+    }
+    setUsernotes(notes){
+        this.usernotes=notes;
     }
 }
 
@@ -72,26 +79,9 @@ if(form)form.addEventListener('submit',displayNote);
 function displayNote(e){
     e.preventDefault();
     let notes = document.getElementById("text-area").value;
-    console.log(`Notes: ${notes}`);
+    console.log(`Note: ${notes}`);
 }
 
-/*const register = document.getElementById("register-Form");
-if(register) register.addEventListener('submit',displayUser)
-
-function displayUser(e){
-    e.preventDefault();
-    let UserfName = document.getElementById("fname").value;
-    let UserlName = document.getElementById("lname").value;
-    let Username = document.getElementById("username").value;
-    let UserPassword = document.getElementById("password").value;
-
-    console.log(`Userfname=${UserfName}`);
-    console.log(`Userlname=${UserlName}`);
-    console.log(`Username=${Username}`);
-    console.log(`Password=${UserPassword}`);
-    console.log(displayUser)
-}
-*/
 
 
 
@@ -108,47 +98,3 @@ function displayUser(e){
 
 
 
-/*const noteForm = document.getElementById("note-form");
-if(noteForm) noteForm.addEventListener('Submit',displaynote);
-function displaynote(e){
-    e.preventdefault();
-    let text = document.getElementById("notes").Value;
-    console.log(`Text = ${text}`);
-}
-*/
-
-/*
-
-const note =document.getElementById("page-space");
-
-if(note) note.addEventListener('submit',displayNote);
-
-function displayNote(e){
-    e.preventDefault();
-    var textarea = document.getElementById("note-space").value;
-
-    console.log(`text = ${textarea}`);
-
-const login = document.getElementById("login-page");
-
-if(login) login.addEventListener('submit', displayLogin);
-
-
-function displayLogin(e) {
-  e.preventDefault();
-  let username = document.getElementById("Username").value;
-  let password = document.getElementById("password");
-  console.log(`username = ${username}`);
-  console.log(`password = ${password}`);
-
-}
-
-const note =document.getElementById("page-space");
-
-if(note) note.addEventListener('submit',displayNote);
-
-function displayNote(e){
-    e.preventDefault();
-    var textarea = document.getElementById("note-space").value;
-
-    console.log(`text = ${textarea}`);*/
