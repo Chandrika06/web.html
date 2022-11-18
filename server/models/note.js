@@ -1,32 +1,27 @@
-const users = [
+const notes = [
   {
     userId: 12345,
-    userName: "cathy123",
-    password: "icecream"
+    noteId:56,
+    userNote: "cathy123",
+    
   },
   {
     userId: 55555,
-    userName: "fredburger",
-    password: "badpassword"
+    noteId:5656,
+    userNote: "fredburger",
+    
   },
   {
     userId: 23412,
-    userName: "bobbyjones",
-    password: "hi"
+    noteId:5656,
+    userNote: "bobbyjones",
+    
   }
 ];
 
-function getAllUsers() {
-  return users;
+function getNotes() {
+  return notes;
 }
 
-function login(user) { // {userName: "sda", password: "gsdhjsga"}
-  let cUser = users.filter( u => u.userName === user.userName);
-  
-  if(!cUser[0]) throw Error("Username not found");
-  if(cUser[0].password !== user.password) throw Error("Password incorrect");
-
-  return cUser[0];
-}
-
-module.exports = { getAllUsers, login };
+let getNotes = () =>notes
+module.exports = { getNotes, login };
