@@ -84,17 +84,3 @@ function displayNote(e){
 
 
 
-
-
-
-
-    
-    
-    
-
-
-
-
-
-
-

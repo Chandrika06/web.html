@@ -2,6 +2,8 @@ const express = require('express');
 const app = express();
 const userRoutes = require("./server/routes/user");
 
+const notesRoutes = require("./server/routes/note");
+
 app.use(express.json());
 
 app.use(function(req,res,next){
@@ -13,5 +15,6 @@ app.use(function(req,res,next){
 
 app.use("/users", userRoutes);
 
+app.use("/notes", userRoutes);
 const Port = process.env.Port || 3000;
 app.listen(Port, () => console.log(`Server started on port ${Port}!`));
