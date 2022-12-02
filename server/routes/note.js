@@ -1,21 +1,50 @@
 const express = require('express');
-const User = require('../models/user');
+const Note = require('../models/note');
 const router = express.Router();
 
 router
   .get('/', async (req, res) => {
     try {
-      const users = await User.getAllUsers();
-      res.send(users);
+      const notes = await Note.getAllnotes();
+      res.send(notes);
     } catch(err) {
       res.status(401).send({message: err.message});
     }
   })
 
-  .post('/login', async (req, res) => {
+  .post('/write_notes', async (req, res) => {
     try {
-      let user = await User.login(req.body);
-      res.send({...user, password: undefined})
+      let note = await Note.write_notes(req.body);
+      res.send({...note, note_content})
+    } catch(err) {
+      res.status(401).send({message: err.message});
+    }
+  })
+
+  
+module.exports = router;
+
+/*
+
+
+const express = require('express');
+const Notes = require('../models/note');
+const router = express.Router();
+
+router
+  .get('/', async (req, res) => {
+    try {
+      const notes = await Notes.getAllUsers();
+      res.send(notes);
+    } catch(err) {
+      res.status(401).send({message: err.message});
+    }
+  });
+
+  .post('/write_notes', async (req, res) => {
+    try {
+      let note = await Notes.write_notes(req.body);
+      res.send({...note, password: undefined})
     } catch(err) {
       res.status(401).send({message: err.message});
     }
@@ -23,4 +52,4 @@ router
 
 
   
-module.exports = router;
+module.exports = router;*/
