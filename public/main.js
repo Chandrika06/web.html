@@ -84,10 +84,10 @@ function displayNote(e){
 
 
 const notebtn = document.getElementById("notes-btn");
-if(notebtn)notebtn.addEventListener('click',getNotes);
+if(notebtn) notebtn.addEventListener('click',getNotes);
 
 function getNotes(){
-    fetch("http://localhost:3000/notes/")
+    fetch("http://localhost:3000/users/")
     .then((res)=> res.json())
     .then((data1) => console.log(data1))
     .catch((err)=> console.log(err))
@@ -96,7 +96,7 @@ function getNotes(){
 
 
 const user_btn = document.getElementById("users-btn");
-user_btn.addEventListener('click',getUsers);
+if(user_btn) user_btn.addEventListener('click',getUsers);
 
 function getUsers(){
     fetch("http://localhost:3000/users/")

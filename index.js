@@ -15,6 +15,6 @@ app.use(function(req,res,next){
 
 app.use("/users", userRoutes);
 
-app.use("/notes", userRoutes);
+app.use("/notes", notesRoutes);
 const Port = process.env.Port || 3000;
 app.listen(Port, () => console.log(`Server started on port ${Port}!`));
