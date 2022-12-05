@@ -88,20 +88,20 @@ if(notebtn) notebtn.addEventListener('click',getNotes);
 
 function getNotes(){
     fetch("http://localhost:3000/users/")
-    .then((res)=> res.json())
+    //.then((res)=> res.json())
     .then((data1) => console.log(data1))
     .catch((err)=> console.log(err))
 }
 
 
-
+/*
 const user_btn = document.getElementById("users-btn");
 if(user_btn) user_btn.addEventListener('click',getUsers);
 
 function getUsers(){
     fetch("http://localhost:3000/users/")
-    .then((res)=> res.json())
+    //.then((res)=> res.json())
     .then((data) => console.log(data))
     .catch((err)=> console.log(err))
 }
-
+*/

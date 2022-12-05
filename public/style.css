@@ -26,7 +26,7 @@ h4{
 
 .box1{ 
     
-    background-image: url(../images/isaac-mitchell-aa8Pi3253Eo-unsplash.jpg);
+    background-image: url(../public/images/isaac-mitchell-aa8Pi3253Eo-unsplash.jpg);
     background-size: 500px;
     border: 2px lightcoral;
     border-radius: 5px;
@@ -38,7 +38,7 @@ h4{
 }
 .b2{ 
     
-    background-image: url(../web.html/images/anna-j5qa7VyYlmc-unsplash.jpg.crdownload);
+    background-image: url(../public/images/michael-fousert-QjhqA0bMHUk-unsplash.jpg);
     background-size: 300px;
     border: 2px lightcoral;
     border-radius: 5px;
@@ -55,7 +55,7 @@ h4{
     padding: 15px;
     display: inline block;
     box-sizing: border-box;
-    background-image: url(../images/pramod-tiwari-CNVftq48iBo-unsplash.jpg);
+    background-image: url(../public/images/pramod-tiwari-CNVftq48iBo-unsplash.jpg);
 }
 
 .one{
@@ -67,7 +67,7 @@ h4{
 header{
     width: 100%;
     height: 50%;
-    background-image: url(../web.html/images/go.jpg);
+    background-image: url(../public/images/go.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: aliceblue;
