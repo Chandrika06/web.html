@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3"
+  },
+  "name": "web.html",
+  "version": "1.0.0",
+  "description": "Project",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chandrika06/web.html.git"
+  },
+  "keywords": [
+    "user",
+    "notes"
+  ],
+  "author": "Chandrika",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chandrika06/web.html/issues"
+  },
+  "homepage": "https://github.com/Chandrika06/web.html#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
