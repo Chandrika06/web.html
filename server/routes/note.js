@@ -1,7 +1,6 @@
 const express = require('express');
 const Note = require('../models/note');
 const router = express.Router();
-
 router
   .get('/', async (req, res) => {
     try {
@@ -10,13 +9,29 @@ router
     } catch(err) {
       res.status(401).send({message: err.message});
     }
-
   })
-
+  .post('/getNote', async (req, res) => {
+    try {
+      console.log(req.body)
+      let note = await Note.getNote(req.body);
+      res.send(note);
+    } catch(err) {
+      res.status(401).send({message: err.message});
+    }
+  })
+  .post('/create', async (req, res) => {
+    try {
+      console.log(req.body)
+      let note = await Note.createNote(req.body);
+      res.send(note);
+    } catch(err) {
+      res.status(401).send({message: err.message});
+    }
+  })
   .post('/Read', async (req, res) => {
     try {
       let note = await Note.Read(req.body);
-      res.send({...note,noteContent})
+      res.send(note);
     } catch(err) {
       res.status(401).send({message: err.message});
     }
@@ -24,7 +39,7 @@ router
   .put('/edit', async (req, res) => {
     try {
       let note = await Note.editNotes(req.body);
-      res.send({...note, noteContent});
+      res.send(note);
     } catch(err) {
       res.status(401).send({message: err.message})
     }
@@ -38,5 +53,4 @@ router
       res.status(401).send({message: err.message})
     }
   })
-
-  module.exports = router;
+module.exports = router;
